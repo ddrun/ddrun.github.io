@@ -35,8 +35,13 @@ categories:
               		branch: master
               		message:
               		
-       （9）更换主题
-       
+       （9）更换主题并发布
+            发布：
+                hexo clean
+                hexo g
+                hexo d
+            按照上述命令即可将静态文章资源发布到ddrun的master分支下，github
+            pages就可以根据master下的内容生成博客文章。
         (10)多设备源码同步
             将源码托管到github，源码和文章静态文件由分支控制
             主设备操作：
@@ -53,6 +58,14 @@ categories:
                 git commit -m "first commit to hexo "
                 // 文件推送到hexo分支
                 git push origin hexo
+            
+            后续发布编译文章还是按照正常流程
+                hexo clean
+                hexo g
+                hexo d
+            在设备上编辑或新增了md后，将源码提交到hexo分支即可保证源码的同步性
+                
+            
             其他设备操作：
                 
             
