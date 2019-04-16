@@ -65,7 +65,18 @@ categories:
                 hexo d
             在设备上编辑或新增了md后，将源码提交到hexo分支即可保证源码的同步性
                 
-            
             其他设备操作：
+                //安装git node
                 
+                //新建目录，存放文章源码，clone分支hexo项目内容
+                git clone -b hexo  https://github.com/ddrun/ddrun.github.io.git
+                //安装hexo
+                npm install -g hexo-cli
+                //安装hexo后不要做初始化init操作，否则会重置hexo配置
+                //安装依赖包
+                npm install
+                //安装hexo发布插件
+                npm install hexo-deployer-git
             
+            
+            参考：https://vitan.me/2018/01/30/Hexo%E6%BA%90%E7%A0%81%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5/
