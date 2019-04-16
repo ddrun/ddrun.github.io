@@ -36,3 +36,23 @@ categories:
               		message:
               		
        （9）更换主题
+       
+        (10)多设备源码同步
+            将源码托管到github，源码和文章静态文件由分支控制
+            主设备操作：
+                在文章所在根目录下键入如下命令：
+                // git初始化，生成.git文件，在.gitignore文件中添加不将上传的目录或文件
+                git init
+                // 添加仓库地址
+                git remote add origin https://github.com/ddrun/ddrun.github.io.git
+                // 新建分支并切换到新建的分支
+                git checkout -b hexo
+                // 添加所有当前根目录下本地文件到git
+                git add .
+                // git提交
+                git commit -m "first commit to hexo "
+                // 文件推送到hexo分支
+                git push origin hexo
+            其他设备操作：
+                
+            
