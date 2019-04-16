@@ -77,6 +77,7 @@ categories:
                 npm install
                 //安装hexo发布插件
                 npm install hexo-deployer-git
-            
+                
+                后续操作和上述类似，但要记得先pull远程代码
             
             参考：https://vitan.me/2018/01/30/Hexo%E6%BA%90%E7%A0%81%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5/
