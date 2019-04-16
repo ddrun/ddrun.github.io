@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="d.djran@gmail.com">
 <meta property="og:description" content="hexo blog process:     (1)安装环境：git和node     (2)安装hexo         npm install –g hexo-cli     (3)环境查看：         git version         node -v         hexo version     (4)新建一个博客md源码的目录，用来存放后续所有的md文章      D:\m">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-16T05:07:12.381Z">
+<meta property="og:updated_time" content="2019-04-16T05:39:47.752Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-post">
 <meta name="twitter:description" content="hexo blog process:     (1)安装环境：git和node     (2)安装hexo         npm install –g hexo-cli     (3)环境查看：         git version         node -v         hexo version     (4)新建一个博客md源码的目录，用来存放后续所有的md文章      D:\m">
@@ -384,8 +384,13 @@
                   branch: master
                   message:
 
-   （9）更换主题
-
+   （9）更换主题并发布
+        发布：
+            hexo clean
+            hexo g
+            hexo d
+        按照上述命令即可将静态文章资源发布到ddrun的master分支下，github
+        pages就可以根据master下的内容生成博客文章。
     (10)多设备源码同步
         将源码托管到github，源码和文章静态文件由分支控制
         主设备操作：
@@ -402,7 +407,28 @@
             git commit -m &quot;first commit to hexo &quot;
             // 文件推送到hexo分支
             git push origin hexo
+
+        后续发布编译文章还是按照正常流程
+            hexo clean
+            hexo g
+            hexo d
+        在设备上编辑或新增了md后，将源码提交到hexo分支即可保证源码的同步性
+
         其他设备操作：
+            //安装git node
+
+            //新建目录，存放文章源码，clone分支hexo项目内容
+            git clone -b hexo  https://github.com/ddrun/ddrun.github.io.git
+            //安装hexo
+            npm install -g hexo-cli
+            //安装hexo后不要做初始化init操作，否则会重置hexo配置
+            //安装依赖包
+            npm install
+            //安装hexo发布插件
+            npm install hexo-deployer-git
+
+
+        参考：https://vitan.me/2018/01/30/Hexo%E6%BA%90%E7%A0%81%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5/
 </code></pre>
       
     </div>
