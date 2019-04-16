@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Interview,">
+  <meta name="keywords" content="redis,">
 
 
 
@@ -80,14 +80,14 @@
 
 
 <meta name="description" content="前言缓存，谁用谁知道。。。 本文主要介绍redis基础及部分机制的原理，包括数据结构、持久化、淘汰机制、数据删除、 数据一致性、缓存击穿和雪崩、redis-cluster模式、哨兵模式等。 正文redis数据结构redis数据结构有哪些？大概都适应什么样一个场景？ ===================================================================">
-<meta name="keywords" content="Interview">
+<meta name="keywords" content="redis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Redis相关-Interview">
 <meta property="og:url" content="http://ddrun.github.io/2019/03/20/2019-03-20-about Redis/index.html">
 <meta property="og:site_name" content="d.djran@gmail.com">
 <meta property="og:description" content="前言缓存，谁用谁知道。。。 本文主要介绍redis基础及部分机制的原理，包括数据结构、持久化、淘汰机制、数据删除、 数据一致性、缓存击穿和雪崩、redis-cluster模式、哨兵模式等。 正文redis数据结构redis数据结构有哪些？大概都适应什么样一个场景？ ===================================================================">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-16T00:44:37.332Z">
+<meta property="og:updated_time" content="2019-04-16T00:51:34.506Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Redis相关-Interview">
 <meta name="twitter:description" content="前言缓存，谁用谁知道。。。 本文主要介绍redis基础及部分机制的原理，包括数据结构、持久化、淘汰机制、数据删除、 数据一致性、缓存击穿和雪崩、redis-cluster模式、哨兵模式等。 正文redis数据结构redis数据结构有哪些？大概都适应什么样一个场景？ ===================================================================">
@@ -303,6 +303,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Interview/" itemprop="url" rel="index">
+                    <span itemprop="name">Interview</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -492,7 +514,7 @@ redis集群实现的技术基础是分片或者分区，即将数据分割到不
 </code></pre><h3 id="redis原理机制"><a href="#redis原理机制" class="headerlink" title="redis原理机制"></a>redis原理机制</h3><pre><code>对redis内部机制了解吗？比如redis-cluster、哨兵、定时任务、事件等的原理了解吗？ 
 =======================================================================&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
 </code></pre><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>   <strong>路漫漫其修远兮 吾将上下而求索</strong></p>
-<p>  <a href="mailto:&#100;&#46;&#x64;&#x6a;&#x72;&#97;&#x6e;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#x6d;" target="_blank" rel="noopener">&#100;&#46;&#x64;&#x6a;&#x72;&#97;&#x6e;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#x6d;</a> </p>
+<p>  <a href="mailto:&#x64;&#x2e;&#x64;&#x6a;&#114;&#97;&#x6e;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#109;" target="_blank" rel="noopener">&#x64;&#x2e;&#x64;&#x6a;&#114;&#97;&#x6e;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#109;</a> </p>
 
       
     </div>
@@ -510,7 +532,7 @@ redis集群实现的技术基础是分片或者分区，即将数据分割到不
       
         <div class="post-tags">
           
-            <a href="/tags/Interview/" rel="tag"># Interview</a>
+            <a href="/tags/redis/" rel="tag"># redis</a>
           
         </div>
       
@@ -523,8 +545,8 @@ redis集群实现的技术基础是分片或者分区，即将数据分割到不
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/20/2019-03-20-Summary of Interview/" rel="next" title="面试总结">
-                <i class="fa fa-chevron-left"></i> 面试总结
+              <a href="/2019/01/24/2019-01-24-Hello-2019/" rel="next" title="2019 is comming">
+                <i class="fa fa-chevron-left"></i> 2019 is comming
               </a>
             
           </div>
@@ -533,8 +555,8 @@ redis集群实现的技术基础是分片或者分区，即将数据分割到不
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/16/hexo-post/" rel="prev" title="hexo-post">
-                hexo-post <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/20/2019-03-20-Summary of Interview/" rel="prev" title="面试总结">
+                面试总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -623,7 +645,7 @@ redis集群实现的技术基础是分片或者分区，即将数据分割到不
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -634,7 +656,7 @@ redis集群实现的技术基础是分片或者分区，即将数据分割到不
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
